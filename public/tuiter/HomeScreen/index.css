@@ -1,0 +1,129 @@
+.wd-border-left-right {
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+}
+
+.wd-border-bottom {
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-border-top {
+    border-top: 1px solid rgb(47, 51, 54);
+}
+
+.wd-bookmarks-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-padding {
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+.wd-user-id {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-fit-content {
+    height: fit-content;
+}
+
+.wd-avatar {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+}
+
+.wd-bookmark-main {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    background-color: #222222;
+}
+
+.wd-user-bookmark-handle {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.wd-user-bookmark-id-name {
+    display: flex;
+}
+
+.wd-user-bookmark-id {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+    margin-right: 5px;
+}
+
+.wd-bookmark-tuit-date {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-user-tuit-content {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 12px;
+    width: 506px;
+}
+
+.wd-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    width: 504px;
+}
+
+.wd-content-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 504px;
+    height: 264px;
+}
+
+.wd-content-image-text {
+    padding: 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.wd-content-image-text-title {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-content-image-text-sub {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+.wd-gray-icon {
+    color: lightgray;
+}
+
+.wd-icon-number {
+    display: flex;
+    text-decoration: none;
+    color: lightgray;
+    margin-right: 90px;
+    align-items: baseline;
+}
+
+.wd-icon-number-spacing {
+    margin-left: 12px;
+    margin-bottom: 0;
+}
+
+.wd-icons-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
