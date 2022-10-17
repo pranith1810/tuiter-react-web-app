@@ -36,11 +36,10 @@
     border-radius: 50%;
     width: 48px;
     height: 48px;
-    margin-right: 12px;
+    padding: 0;
 }
 
 .wd-bookmark-main {
-    display: flex;
     padding: 10px 10px 10px 10px;
     background-color: #222222;
 }
@@ -71,21 +70,18 @@
     color: white;
     font-size: 15px;
     margin-bottom: 12px;
-    width: 506px;
 }
 
 .wd-content {
     display: flex;
     flex-direction: column;
     margin-bottom: 12px;
-    width: 504px;
 }
 
 .wd-content-image {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 504px;
     height: 264px;
 }
 
@@ -113,7 +109,6 @@
     display: flex;
     text-decoration: none;
     color: lightgray;
-    margin-right: 90px;
     align-items: baseline;
 }
 
@@ -124,6 +119,6 @@
 
 .wd-icons-div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }

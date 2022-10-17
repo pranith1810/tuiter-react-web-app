@@ -1,8 +1,8 @@
 const PostItem = (post) => {
   return `
-    <div class="wd-bookmark-main wd-border-left-right wd-border-top">
-    <img class="wd-avatar" src=${post.avatar} />
-    <div class="wd-bookmark-content">
+    <div class="row flex-nowrap wd-bookmark-main wd-border-left-right wd-border-top">
+    <img class="wd-avatar col-1" src=${post.avatar} />
+    <div class="wd-bookmark-content col-11">
         <div class="wd-user-bookmark-id-name">
             <div class="wd-user-bookmark-handle">${post.handle}</div>
             <div class="wd-user-bookmark-id">@${post.id} · </div>

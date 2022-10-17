@@ -43,10 +43,10 @@ const PostSummaryListItem = (post) => {
                                 : ""
                             }
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 p-0">
                                 <img src=${
                                   post.image
-                                } class="rounded" width="100%" height="100%" />
+                                } class="rounded" width="80%" height="80%" />
                             </div>
                         </div>
                     </li>
