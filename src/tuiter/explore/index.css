@@ -1,0 +1,29 @@
+.wd-search-tuiter {
+    bottom: 7px;
+    left: 10px;
+}
+
+.wd-search-bar {
+    border: 1px solid black;
+}
+
+.wd-search-bar:focus {
+    border: 1px solid #1D9BF0;
+}
+
+.wd-search-bar:visited {
+    border: 1px solid #1D9BF0;
+}
+
+.wd-magnifying-icon {
+    color: #65717D;
+}
+
+.wd-cog-icon {
+    color: #2A9FD6;
+    font-size: 30px;
+}
+
+.wd-text-dark {
+    color: #222222;
+}
