@@ -12,7 +12,7 @@ const PostSummaryItem = ({ post }) => {
             {post.userName ? (
               <span className="fw-bold">{post.userName}</span>
             ) : null}
-            <i class="bi bi-check-circle ms-1" aria-hidden={true}></i>
+            <i className="bi bi-check-circle ms-1" aria-hidden={true}></i>
             {post.time ? (
               <span className="text-secondary"> {post.time}</span>
             ) : null}

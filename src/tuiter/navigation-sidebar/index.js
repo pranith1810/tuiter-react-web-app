@@ -1,62 +1,81 @@
 import React from "react";
-const NavigationSidebar = ({ active = "explore" }) => {
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
+
+const NavigationSidebar = ({}) => {
+  const { pathname } = useLocation();
+  const paths = pathname.split("/");
+  const active = paths[2];
+
   return (
     <div className="list-group">
-      <div class="list-group-item">
-        <i class="bi bi-align-top"></i>
+      <div className="list-group-item">
+        <i className="bi bi-align-top"></i>
       </div>
-      <a className={`list-group-item ${active === "home" ? "active" : ""}`}>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-house-door-fill"></i>
-          <div class="d-none d-xl-block ms-2">Home</div>
+      <Link
+        to="/tuiter/home"
+        className={`list-group-item ${active === "home" ? "active" : ""}`}
+      >
+        <div className="d-flex align-items-center">
+          <i className="bi bi-house-door-fill"></i>
+          <div className="d-none d-xl-block ms-2">Home</div>
         </div>
-      </a>
-      <a className={`list-group-item ${active === "explore" ? "active" : ""}`}>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-hash"></i>
-          <div class="d-none d-xl-block ms-2">Explore</div>
+      </Link>
+      <Link
+        to="/tuiter/explore"
+        className={`list-group-item ${active === "explore" ? "active" : ""}`}
+      >
+        <div className="d-flex align-items-center">
+          <i className="bi bi-hash"></i>
+          <div className="d-none d-xl-block ms-2">Explore</div>
         </div>
-      </a>
+      </Link>
+      <Link to="/" className="list-group-item">
+        <div className="d-flex align-items-center">
+          <i className="bi bi-hourglass"></i>
+          <div className="d-none d-xl-block ms-2">Labs</div>
+        </div>
+      </Link>
       <a
         className={`list-group-item ${
           active === "notifications" ? "active" : ""
         }`}
       >
-        <div class="d-flex align-items-center">
-          <i class="bi bi-bell-fill"></i>
-          <div class="d-none d-xl-block ms-2">Notifications</div>
+        <div className="d-flex align-items-center">
+          <i className="bi bi-bell-fill"></i>
+          <div className="d-none d-xl-block ms-2">Notifications</div>
         </div>
       </a>
       <a className={`list-group-item ${active === "messages" ? "active" : ""}`}>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-envelope-fill"></i>
-          <div class="d-none d-xl-block ms-2">Messages</div>
+        <div className="d-flex align-items-center">
+          <i className="bi bi-envelope-fill"></i>
+          <div className="d-none d-xl-block ms-2">Messages</div>
         </div>
       </a>
       <a
         className={`list-group-item ${active === "bookmarks" ? "active" : ""}`}
       >
-        <div class="d-flex align-items-center">
-          <i class="bi bi-bookmark-fill"></i>
-          <div class="d-none d-xl-block ms-2">Bookmarks</div>
+        <div className="d-flex align-items-center">
+          <i className="bi bi-bookmark-fill"></i>
+          <div className="d-none d-xl-block ms-2">Bookmarks</div>
         </div>
       </a>
       <a className={`list-group-item ${active === "lists" ? "active" : ""}`}>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-list-ul"></i>
-          <div class="d-none d-xl-block ms-2">Lists</div>
+        <div className="d-flex align-items-center">
+          <i className="bi bi-list-ul"></i>
+          <div className="d-none d-xl-block ms-2">Lists</div>
         </div>
       </a>
       <a className={`list-group-item ${active === "profile" ? "active" : ""}`}>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-person-fill"></i>
-          <div class="d-none d-xl-block ms-2">Profile</div>
+        <div className="d-flex align-items-center">
+          <i className="bi bi-person-fill"></i>
+          <div className="d-none d-xl-block ms-2">Profile</div>
         </div>
       </a>
       <a className={`list-group-item ${active === "more" ? "active" : ""}`}>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-dash-circle-fill"></i>
-          <div class="d-none d-xl-block ms-2">More</div>
+        <div className="d-flex align-items-center">
+          <i className="bi bi-dash-circle-fill"></i>
+          <div className="d-none d-xl-block ms-2">More</div>
         </div>
       </a>
     </div>
