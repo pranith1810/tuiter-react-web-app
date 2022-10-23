@@ -15,7 +15,7 @@ const WhoToFollowListItem = ({ who }) => {
             <div className="ms-2">
               <div>
                 <span className="fw-bold">{who.userName}</span>
-                <i class="bi bi-check-circle ms-1" aria-hidden={true}></i>
+                <i className="bi bi-check-circle ms-1" aria-hidden={true}></i>
               </div>
               <div>@{who.handle}</div>
             </div>
