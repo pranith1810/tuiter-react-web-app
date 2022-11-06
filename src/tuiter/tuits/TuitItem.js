@@ -21,6 +21,7 @@ function TuitItem({ tuit }) {
           </div>
           <i
             className="bi bi-x-lg p-0"
+            style={{ cursor: "pointer" }}
             onClick={() => deleteTuitHandler(tuit._id)}
           ></i>
         </div>
