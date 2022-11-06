@@ -1,0 +1,61 @@
+.wd-icon-size-big {
+    font-size: 30px;
+}
+
+.wd-border-left-right {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.wd-avatar-edit-profile {
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    bottom: -50px;
+    left: 20px;
+    width: 230px;
+    height: 200px;
+}
+
+.wd-mid-profile-div {
+    height: 100%;
+}
+
+.wd-edit-part {
+    margin-top: 4rem;
+}
+
+.wd-black-tint {
+    filter: brightness(70%);
+}
+
+.wd-icon-overlay {
+    color: white;
+    font-size: 25px;
+}
+
+.wd-icon-div {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.wd-icon-cross-div {
+    bottom: 50%;
+    left: 50%;
+}
+
+.wd-icon-camera-avatar-div {
+    bottom: 9%;
+    left: 19%;
+    z-index: 10;
+}
+
+.wd-icon-camera-cover-div {
+    bottom: 50%;
+    left: 42%;
+}

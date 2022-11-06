@@ -1,0 +1,18 @@
+.wd-border-left-right {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.wd-avatar-profile {
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    bottom: 0;
+    left: 20px;
+    width: 230px;
+    height: 200px;
+}
+
+.wd-mid-profile-div {
+    height: 100%;
+}

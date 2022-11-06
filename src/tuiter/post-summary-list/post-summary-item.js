@@ -9,12 +9,10 @@ const PostSummaryItem = ({ post }) => {
             <div className="text-secondary">{post.topic}</div>
           ) : null}
           <div>
-            {post.userName ? (
-              <span className="fw-bold">{post.userName}</span>
-            ) : null}
+            {post.name ? <span className="fw-bold">{post.name}</span> : null}
             <i className="bi bi-check-circle ms-1" aria-hidden={true}></i>
-            {post.time ? (
-              <span className="text-secondary"> {post.time}</span>
+            {post.date ? (
+              <span className="text-secondary"> {"·" + post.date}</span>
             ) : null}
           </div>
           {post.title ? <div className="fw-bold">{post.title}</div> : null}
@@ -23,7 +21,7 @@ const PostSummaryItem = ({ post }) => {
           ) : null}
         </div>
         <div className="col-2 p-0">
-          <img src={post.image} className="rounded" width="80%" height="80%" />
+          <img src={post.avatar} className="rounded" width="80%" height="80%" />
         </div>
       </div>
     </li>

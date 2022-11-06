@@ -48,10 +48,6 @@
     margin-right: 5px;
 }
 
-.wd-user-bookmark-id-name {
-    display: flex;
-}
-
 .wd-user-bookmark-id {
     font-size: 15px;
     color: rgb(110, 118, 125);
@@ -98,6 +94,10 @@
 
 .wd-gray-icon {
     color: lightgray;
+}
+
+.wd-red-icon {
+    color: rgb(244, 82, 82);
 }
 
 .wd-icon-number {

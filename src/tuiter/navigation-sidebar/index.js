@@ -13,8 +13,8 @@ const NavigationSidebar = ({}) => {
         <i className="bi bi-align-top"></i>
       </div>
       <Link
-        to="/tuiter/home"
-        className={`list-group-item ${active === "home" ? "active" : ""}`}
+        to="/tuiter"
+        className={`list-group-item ${!active ? "active" : ""}`}
       >
         <div className="d-flex align-items-center">
           <i className="bi bi-house-door-fill"></i>
@@ -66,12 +66,17 @@ const NavigationSidebar = ({}) => {
           <div className="d-none d-xl-block ms-2">Lists</div>
         </div>
       </a>
-      <a className={`list-group-item ${active === "profile" ? "active" : ""}`}>
+      <Link
+        to="/tuiter/profile"
+        className={`list-group-item ${
+          active === "profile" || active === "edit-profile" ? "active" : ""
+        }`}
+      >
         <div className="d-flex align-items-center">
           <i className="bi bi-person-fill"></i>
           <div className="d-none d-xl-block ms-2">Profile</div>
         </div>
-      </a>
+      </Link>
       <a className={`list-group-item ${active === "more" ? "active" : ""}`}>
         <div className="d-flex align-items-center">
           <i className="bi bi-dash-circle-fill"></i>
