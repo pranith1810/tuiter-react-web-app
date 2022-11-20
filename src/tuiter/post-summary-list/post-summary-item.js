@@ -9,7 +9,9 @@ const PostSummaryItem = ({ post }) => {
             <div className="text-secondary">{post.topic}</div>
           ) : null}
           <div>
-            {post.name ? <span className="fw-bold">{post.name}</span> : null}
+            {post.username ? (
+              <span className="fw-bold">{post.username}</span>
+            ) : null}
             <i className="bi bi-check-circle ms-1" aria-hidden={true}></i>
             {post.date ? (
               <span className="text-secondary"> {"·" + post.date}</span>
